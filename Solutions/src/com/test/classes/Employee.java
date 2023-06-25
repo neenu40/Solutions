@@ -11,6 +11,8 @@ public class Employee extends Person {
     public void displayEmployeeDetails() {
         displayDetails();
         System.out.println("Employee ID: " + employeeId);
+System.out.println("JAVA");
+
     }
     
     public boolean isEmployeeEligibleForRetirement(int retirementAge) {
