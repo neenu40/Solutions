@@ -1,0 +1,35 @@
+package com.test.classes;
+
+public class Employee extends Person {
+    private int employeeId;
+
+    public Employee(String name, int age, String email, int employeeId) {
+        super(name, age, email);
+        this.employeeId = employeeId;
+    }
+
+    public int getAge() {
+        LocalDate currentDate = LocalDate.now();
+        LocalDate birthDate = LocalDate.of(getBirthYear(), getBirthMonth(), getBirthDay());
+        Period ageDifference = Period.between(birthDate, currentDate);
+        return ageDifference.getYears();
+    }
+
+    private int getBirthYear() {
+        // Extract the birth year from the email address or any other logic to obtain the birth year
+        // Return the birth year as an integer
+    }
+
+    private int getBirthMonth() {
+        // Extract the birth month from the email address or any other logic to obtain the birth month
+        // Return the birth month as an integer
+    }
+
+    private int getBirthDay() {
+        // Extract the birth day from the email address or any other logic to obtain the birth day
+        // Return the birth day as an integer
+    }
+
+    // Rest of the class code...
+}
+

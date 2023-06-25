@@ -1,0 +1,72 @@
+package com.test;
+
+public class AbstractClassExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	// Abstract Vehicle class
+	abstract class Vehicle {
+	    protected String brand;
+	    protected double price;
+
+	    public Vehicle(String brand, double price) {
+	        this.brand = brand;
+	        this.price = price;
+	    }
+
+	    public abstract void displayInfo();
+	}
+
+	// Car subclass
+	class Car extends Vehicle {
+	    private int numDoors;
+
+	    public Car(String brand, double price, int numDoors) {
+	        super(brand, price);
+	        this.numDoors = numDoors;
+	    }
+
+	    @Override
+	    public void displayInfo() {
+	        System.out.println("Car Details:");
+	        System.out.println("Brand: " + brand);
+	        System.out.println("Price: $" + price);
+	        System.out.println("Number of Doors: " + numDoors);
+	    }
+	}
+
+	// Motorcycle subclass
+	class Motorcycle extends Vehicle {
+	    private boolean hasSideCar;
+
+	    public Motorcycle(String brand, double price, boolean hasSideCar) {
+	        super(brand, price);
+	        this.hasSideCar = hasSideCar;
+	    }
+
+	    @Override
+	    public void displayInfo() {
+	        System.out.println("Motorcycle Details:");
+	        System.out.println("Brand: " + brand);
+	        System.out.println("Price: $" + price);
+	        System.out.println("Has Sidecar: " + hasSideCar);
+	    }
+	}
+
+	// Main class
+	public class Main {
+	    public static void main(String[] args) {
+	        Vehicle car = new Car("Toyota", 25000.0, 4);
+	        Vehicle motorcycle = new Motorcycle("Harley Davidson", 15000.0, false);
+
+	        car.displayInfo();
+	        System.out.println();
+	        motorcycle.displayInfo();
+	    }
+	}
+
+
+}

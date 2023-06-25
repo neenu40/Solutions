@@ -1,0 +1,11 @@
+package com.test.interfaceandabstraction;
+
+public class Main {
+	 Organization organization = new Organization();
+
+     Person employee1 = new Person("John Doe", 30, "johndoe@example.com");
+     Person employee2 = new Person("Jane Smith", 35, "janesmith@example.com");
+
+     organization.addEmployee(employee1);
+     organization.addEmployee(employee2);
+}

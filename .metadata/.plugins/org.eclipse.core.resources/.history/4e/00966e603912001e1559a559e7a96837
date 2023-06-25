@@ -1,0 +1,19 @@
+package com.test.basics;
+
+public class Palindrome {
+	
+
+    public static void main(String[] args) {
+        String str1 = "madam";
+        
+        boolean isPalindrome = str1.equals(new StringBuilder(str1).reverse().toString());
+
+        System.out.println(str1 + " is a palindrome: " + isPalindrome(str1));
+
+        String str2 = "hello";
+        System.out.println(str2 + " is a palindrome: " + isPalindrome(str2));
+
+        String str3 = "racecar";
+        System.out.println(str3 + " is a palindrome: " + isPalindrome(str3));
+    }
+}

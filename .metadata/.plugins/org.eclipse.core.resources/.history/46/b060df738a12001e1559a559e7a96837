@@ -1,0 +1,17 @@
+package com.test.interfaceandabstraction;
+
+import java.util.ArrayList;
+
+public class Organization {
+    private ArrayList<Person> employees;
+
+    public Organization() {
+        employees = new ArrayList<>();
+    }
+
+    public void addEmployee(Person employee) {
+        employees.add(employee);
+    }
+
+    // Other methods and attributes of the Organization class...
+}

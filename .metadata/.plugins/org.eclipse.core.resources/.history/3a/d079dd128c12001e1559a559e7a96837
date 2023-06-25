@@ -1,0 +1,11 @@
+package com.test.interfaceandabstraction;
+
+public class Collections {
+	 Organization organization = new Organization();
+
+	 Employee employee1 = new Employee("John Doe", 30, 18000);
+	 Employee employee2 = new Employee("Jane Smith", 35, 20000);
+
+	 organization.addEmployee(employee1);
+	 
+}

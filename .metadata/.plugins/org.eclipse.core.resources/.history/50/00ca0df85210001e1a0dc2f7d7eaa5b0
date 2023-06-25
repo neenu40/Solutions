@@ -1,0 +1,29 @@
+package com.test;
+
+import java.util.ArrayList;
+
+public class CreateUsersResponse {
+
+	private ArrayList<UserProfile> userProfile;
+	
+} class UserProfile {
+	 public User user;
+	}
+
+ class User {
+
+	public String userId;
+	
+	public String requestSequence;
+	
+	public Validations validations;
+	
+	public String overallProcessResult;
+	
+	public IndividualName individualName;
+	
+}
+
+ class Validations {
+	  private String orgnUnitIdExistsYesNo;
+	}

@@ -1,0 +1,23 @@
+package com.test.basics;
+
+public class ScientificCalculator extends Calculator {
+    public double multiply(double num1, double num2) {
+        return Math.pow(num1, num2);
+    }
+
+    public static void main(String[] args) {
+        ScientificCalculator scientificCalculator = new ScientificCalculator();
+
+        System.out.println("Addition:");
+        System.out.println(scientificCalculator.add(2, 3));
+        System.out.println(scientificCalculator.add(2.5, 3.7));
+
+        System.out.println("Subtraction:");
+        System.out.println(scientificCalculator.subtract(5, 3));
+        System.out.println(scientificCalculator.subtract(5.5, 2.3));
+
+        System.out.println("Multiplication (Power):");
+        System.out.println(scientificCalculator.multiply(2, 3)); // 2 raised to the power of 3
+        System.out.println(scientificCalculator.multiply(4.5, 2.1)); // 4.5 raised to the power of 2.1
+    }
+}
