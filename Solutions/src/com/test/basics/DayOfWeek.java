@@ -39,6 +39,8 @@ public class DayOfWeek {
         }
 
         System.out.println("The day is: " + day);
+
+	System.out.println("Hello, My name is Sminu");
     }
 }
 
