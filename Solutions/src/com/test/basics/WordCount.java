@@ -11,6 +11,7 @@ public class WordCount {
 
         int wordCount = countWords(sentence);
         System.out.println("Total number of words: " + wordCount);
+		System.out.println("Total number of words Recent Update Gaya: " + wordCount);
     }
 
     public static int countWords(String sentence) {
