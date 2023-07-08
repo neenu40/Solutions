@@ -10,7 +10,8 @@ public class WordCount {
         String sentence = scanner.nextLine();
 
         int wordCount = countWords(sentence);
-        System.out.println("Total number of words: " + wordCount);
+       
+		System.out.println("Total number of words Recent Update Gaya: " + wordCount);
     }
 
     public static int countWords(String sentence) {
