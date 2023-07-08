@@ -24,6 +24,8 @@ public class FindElementById {
 		WebDriver driver = new ChromeDriver();
 				
 		driver.get("https://demoqa.com/text-box/");	
+		driver.manage().window().maximize();
+		
 		
 				
 	    WebElement element = driver.findElement(By.id("submit"));
@@ -32,5 +34,8 @@ public class FindElementById {
 		if(element != null) {
 			    System.out.println("Element found by ID");
 	}
-   }
+		// driver.close();
+     }
+    
+     
 }
