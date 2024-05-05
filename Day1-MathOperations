@@ -1,0 +1,26 @@
+public class MathOperations {
+    public static void main(String[] args) {
+        int num1 = 3;
+        int num2 = 2;
+        
+        int sum = sumOfTwoNumbers(num1, num2);
+        int difference = differenceOfTwoNumbers(num1, num2);
+        int product = productOfTwoNumbers(num1, num2);
+        
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+    }
+    
+    public static int sumOfTwoNumbers(int num1, int num2) {
+        return num1 + num2;
+    }
+    
+    public static int differenceOfTwoNumbers(int num1, int num2) {
+        return num1 - num2;
+    }
+    
+    public static int productOfTwoNumbers(int num1, int num2) {
+        return num1 * num2;
+    }
+}
